@@ -1,0 +1,355 @@
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures flexibility for small screens */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+    margin-top: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image section styling */
+.image-section {
+    flex: 1;
+    min-width: 800px;
+    /* Minimum width for the image section */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers its container */
+}
+
+/* Content section styling */
+.content-section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-box {
+        flex-direction: column;
+        /* Stack image and content vertically on smaller screens */
+    }
+
+    .image-section,
+    .content-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .content-section h2 {
+        font-size: 20px;
+    }
+
+    .content-section p {
+        font-size: 14px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Static/backrounds/background3.png');
+    /* Your background image URL */
+    background-size: cover;
+    /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: center center;
+    /* Centers the image */
+    background-attachment: fixed;
+    /* Keeps the background image fixed when scrolling */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden auto;
+}
+
+/* Container with a constant size */
+.news-container {
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout */
+    width: 500px;
+    /* Fixed width */
+    height: 200px;
+    /* Fixed height */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Image section */
+.news-image {
+    flex: 1;
+    min-width: 150px;
+    /* Ensures image width is proportionate */
+    height: 100%;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image fits the container */
+}
+
+/* Content section */
+.news-content {
+    flex: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.nb-news-item {
+    height: 400px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+/* Entire scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Width of the scrollbar */
+}
+
+/* Scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #1c1b1b;
+    /* Color of the thumb */
+    border-radius: 10px;
+    border: 2px solid #393838;
+    /* Optional: Border around the thumb */
+}
+
+/* Scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Darken the thumb when hovered */
+}
+
+/* Trivia Container */
+.trivia-container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid inherit;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Question Styling */
+.question {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Options Container */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 10px;
+}
+
+/* Option Box Styling */
+.option-box {
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.option-box:hover {
+    background-color: #d0d0d0;
+}
+
+.option-box.selected {
+    background-color: #4caf50;
+    /* Highlight the selected option */
+    color: white;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Submitted Text */
+.submitted-text {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Subscribe Container */
+.subscribe-container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid inherit;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headline */
+.subscribe-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Input Box */
+.email-input {
+    width: 70%;
+    /* Set a width for the input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+    /* Space between input and button */
+}
+
+/* Member Container */
+.member-container {
+    display: flex;
+    justify-content: space-around;
+    /* Space between the cards */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    max-width: 1200px;
+    /* Limit the width of the container */
+    margin: 50px auto;
+    /* Center the container */
+    padding: 20px;
+}
+
+/* Member Card */
+.member-card {
+    background-color: #00000090;
+    border: 1px solid #0000008d;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    /* Set a fixed width for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    /* Space between cards */
+    text-align: center;
+    /* Center align text */
+    transition: transform 0.3s ease;
+    /* Animation for hover effect */
+}
+
+/* Member Card Hover Effect */
+.member-card:hover {
+    transform: scale(1.05);
+    /* Slightly increase size on hover */
+}
+
+/* Member Name */
+.member-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white;
+    /* Margin around name */
+}
+
+/* Member Description */
+.member-description {
+    font-size: 40px;
+    color: white;
+    /* Gray color for description */
+}
+
+.member-description i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nb-quiz-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.nb-ebook-card img{
+    height: 250px;
+    width: auto;
+}
+
+.nb-ebook-card img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
