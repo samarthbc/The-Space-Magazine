@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Home.css'
 
 function Home() {
@@ -6,7 +7,7 @@ function Home() {
   const [APOD, setAPOD] = useState([]);
 
   const getAPOD = async () => {
-    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=FTAyielV11srYl8bPtd4qoc1LIJwxnmZ3dQRbUcs&date=2024-10-02`)
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=FTAyielV11srYl8bPtd4qoc1LIJwxnmZ3dQRbUcs&date=2024-10-03`)
     let apod = await response.json()
     setAPOD(apod);
   }
@@ -100,6 +101,14 @@ function Home() {
         </div>
       </div>
 
+      <div className="solar-container">
+                <h2 className="solar-title">Simulate a Star System</h2>
+                <p className="solar-description">
+                    Convert your imaginations into simulations to visualise a random possible Star System
+                </p>
+                <Link to="https://threesolar.netlify.app/" target='_blank'><button className="solar-button">Simulate</button></Link>
+            </div>
+
       <div className="subscribe-container mt-4">
         <h2>Subscribe to our weekly Space Magazines</h2>
         <form onSubmit={handleEsubmit}>
@@ -113,7 +122,7 @@ function Home() {
           />
           <button type="submit" className="submit-btn">Subscribe</button>
         </form>
-        {submitted && <p className="submitted-text">Thank you for subscribing!</p>}
+        {esubmitted && <p className="submitted-text">Thank you for subscribing!</p>}
       </div>
 
       <div className="member-container">

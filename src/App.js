@@ -9,6 +9,8 @@ import SolarSystem from "./Components/SolarSystem";
 import News from "./Components/News";
 import Quizzes from "./Components/Quizzes";
 import Ebooks from "./Components/Ebooks";
+import Simulation from "./Components/Simulation";
+import Explore from "./Components/Explore";
 
 function App() {
     return(
@@ -20,6 +22,8 @@ function App() {
                     <Route path="/news" element={<News/>}></Route>
                     <Route path="/quizzes" element={<Quizzes/>}></Route>
                     <Route path="/ebooks" element={<Ebooks/>}></Route>
+                    <Route path="/simulation" element={<Simulation/>}></Route>
+                    <Route path="/explore" element={<Explore/>}></Route>
                 </Routes>
             </Router>
         </>

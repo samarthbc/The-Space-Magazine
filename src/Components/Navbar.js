@@ -19,9 +19,6 @@ function Navbar() {
                                 <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="https://threesolar.netlify.app/" target='_blank'>Simulation</Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === "/news" ? "active" : ""}`} aria-current="page" to="/news">News</Link>
                             </li>
                             <li className="nav-item">
@@ -32,6 +29,9 @@ function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === "/quizzes" ? "active" : ""}`} aria-current="page" to="/quizzes">Quizzes</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`nav-link ${location.pathname === "/explore" ? "active" : ""}`} aria-current="page" to="/explore">Explore</Link>
                             </li>
                         </ul>
                     </div>
