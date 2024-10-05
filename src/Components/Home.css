@@ -693,7 +693,7 @@ body {
 
 .option-box.selected {
     border: 2px solid #007BFF; /* Blue border for selected option */
-    background-color: orange /* Yellow for correct answer */
+    background-color: green /* Yellow for correct answer */
   }
   
   .option-box.correct {
