@@ -77,7 +77,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../Static/backrounds/background3.png');
+    /* background-image: url('../Static/backrounds/background3e.jpg'); */
+    background-color: #2a2a2a;
     /* Your background image URL */
     background-size: cover;
     /* Ensures the image covers the entire screen */
@@ -217,10 +218,6 @@ body {
     text-align: center;
 }
 
-.option-box:hover {
-    background-color: #d0d0d0;
-}
-
 .option-box.selected {
     background-color: #4caf50;
     /* Highlight the selected option */
@@ -346,7 +343,7 @@ body {
 
 .nb-ebook-card img {
     height: 250px;
-    width: auto;
+    width: 200px;
 }
 
 .nb-ebook-card img:hover {
@@ -443,3 +440,269 @@ body {
 .search-button:hover {
     background-color: #45a049;
 }
+
+/* Main Container Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Static/backrounds/background5e.jpg");
+    background-size: cover;
+    /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: center center;
+    /* Centers the image */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    height: 100vh;
+    padding: 20px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+    border-radius: 15px;
+}
+
+/* Logo Styling */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    /* Adjust logo size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+/* Main Title Styling */
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease;
+}
+
+/* Description Container Styling */
+.description-container {
+    max-width: 1000px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    /* backdrop-filter: blur(10px); */
+    /* Blur effect for a frosted glass look */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+/* Description Text Styling */
+.description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Fade-in effect for the title */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Theme Styles */
+
+
+.planet-details-container {
+    max-width: 600px;
+    /* Maximum width for container */
+    margin: auto;
+    /* Center the container */
+    padding: 20px;
+    /* Padding inside the container */
+    background-color: #1e1e1e;
+    /* Darker container background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow */
+    color: white;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    /* Space below input container */
+}
+
+.search-input {
+    width: 100%;
+    /* Full width input */
+    padding: 10px;
+    /* Padding inside input */
+    margin: 10px 0;
+    /* Margin around input */
+    border: 1px solid #444;
+    /* Dark border */
+    border-radius: 4px;
+    /* Rounded input corners */
+    background-color: #333;
+    /* Dark background for input */
+    color: #ffffff;
+    /* Light text color for input */
+    transition: border-color 0.3s;
+    /* Smooth transition */
+}
+
+.search-input:focus {
+    border-color: #007BFF;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+.search-button {
+    padding: 10px 15px;
+    /* Button padding */
+    background-color: #007BFF;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Rounded button corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    /* Darker button on hover */
+}
+
+.details-box {
+    margin-top: 20px;
+    /* Space above details box */
+    padding: 15px;
+    /* Padding inside details box */
+    border-radius: 4px;
+    /* Rounded corners */
+
+    max-width: 1000px;
+    /* Maximum width for container */
+    margin: auto;
+    /* Center the container */
+    padding: 20px;
+    /* Padding inside the container */
+    background-color: #1e1e1e;
+    /* Darker container background */
+    border-radius: 8px;
+    /* Rounded corners */
+    color: white;
+}
+
+.details-box h3 {
+    margin-top: 0;
+    /* Remove top margin for heading */
+}
+
+.details-list {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.details-list li {
+    padding: 5px 0;
+    /* Padding for list items */
+}
+
+.error-text {
+    color: #ff5555;
+    /* Error text color */
+    margin: 10px 0;
+    /* Margin above and below error text */
+}
+
+/* PlanetSimulation.css */
+.simulation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.simulation-canvas {
+    border: 2px solid #007BFF;
+    /* Border color for canvas */
+    background-color: #1e1e1e;
+    /* Dark background for canvas */
+}
+
+/* Styling for the planet details table */
+.planet-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.planet-details-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.planet-details-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.table-key {
+    width: 40%;
+    font-weight: bold;
+    color: #f0f0f0;
+    background-color: #1e1e1e;
+}
+
+.table-value {
+    width: 60%;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Optional: Add some hover effects */
+.planet-details-table tr:hover {
+    background-color: #444;
+}
+
+.option-box.selected {
+    border: 2px solid #007BFF; /* Blue border for selected option */
+    background-color: orange /* Yellow for correct answer */
+  }
+  
+  .option-box.correct {
+    background-color: green; /* Green for correct answer */
+    color: white; /* White text for better contrast */
+  }
+  
+  .option-box.incorrect {
+    background-color: red; /* Red for incorrect answer */
+    color: white; /* White text for better contrast */
+  }
+

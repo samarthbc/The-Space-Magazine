@@ -9,6 +9,9 @@ function Navbar() {
         <>
             <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
                 <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">
+                        <img src={require("../Static/Logos/logo_main_circle_cropped_png.png")} alt="logo" width="40px" height="40px" />
+                    </Link>
                     <Link className="navbar-brand" to="/">The Space Magazine</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -25,7 +28,7 @@ function Navbar() {
                                 <Link className={`nav-link ${location.pathname === "/ebooks" ? "active" : ""}`} aria-current="page" to="/ebooks">E-Books</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${location.pathname === "/magazines" ? "active" : ""}`} aria-current="page" to="/magzines">Magazines</Link>
+                                <Link className={`nav-link ${location.pathname === "/magazines" ? "active" : ""}`} aria-current="page" to="/magazines">Magazines</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === "/quizzes" ? "active" : ""}`} aria-current="page" to="/quizzes">Quizzes</Link>

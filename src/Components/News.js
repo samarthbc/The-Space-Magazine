@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NewsItems from './NewsItems'
 
-function News() {
+function News() { 
 
     const [articles, setArticles] = useState([])
     const [totalresults, setTotalresults] = useState(0)
@@ -26,6 +26,7 @@ function News() {
         <>
             <h3 className='text-light text-center mt-3' style={{ fontFamily: "'Caveat', cursive", fontWeight: "bolder", fontSize: "40px" }}>Space News Across the Globe <i class="fa-solid fa-globe"></i></h3>
             <div className="container">
+            <h6 className='text-light text-center'>Source: https://newsapi.org/</h6>
                 <div className="row mt-4">
                     {articles.map((element) => {
                         return (

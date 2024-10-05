@@ -7,7 +7,7 @@ function Home() {
   const [APOD, setAPOD] = useState([]);
 
   const getAPOD = async () => {
-    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=FTAyielV11srYl8bPtd4qoc1LIJwxnmZ3dQRbUcs&date=2024-10-03`)
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=FTAyielV11srYl8bPtd4qoc1LIJwxnmZ3dQRbUcs&date=2024-10-05`)
     let apod = await response.json()
     setAPOD(apod);
   }
@@ -52,6 +52,18 @@ function Home() {
 
   return (
     <>
+      <div className="main-container">
+        <div className="logo-container">
+          <img src={require("../Static/Logos/logo_main_circle_cropped_png.png")} alt="Logo" className="logo" />
+        </div>
+        <h1 className="main-title" style={{fontFamily:"Playwrite FR Moderne", fontSize:"40px"}}>The Space Magazine</h1>
+        <div className="description-container">
+          <p className="description">
+          Welcome to the Space Magazine, your hub for exploring the universe! Stay updated with the latest Space News, dive into our Weekly Magazines filled with fascinating discoveries, and explore in-depth content with our E-books. Challenge your knowledge through fun Quizzes, simulate random star systems to experience the cosmos firsthand, and embark on an Exoplanet search to uncover distant worlds. Explore space like never before!
+          </p>
+        </div>
+      </div>
+
       <div className="container-box container">
         {/* Image Section */}
         <div className="image-section">
@@ -63,6 +75,7 @@ function Home() {
 
         {/* Content Section */}
         <div className="content-section">
+          <h2 style={{textDecoration:"underline"}}>ASTRONOMY IMAGE OF THE DAY</h2>
           <h2>{APOD.title}</h2>
           <p>
             {APOD.explanation}
@@ -71,11 +84,6 @@ function Home() {
             Source: NASA Astronomy Picture of The Day (APOD)
           </p>
         </div>
-      </div>
-
-      <div className="d-flex container flex-column mt-4">
-        <h1 className="text-light">The Space Magazine</h1>
-        <h3 className="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit nesciunt iure consequatur quibusdam repellendus voluptas! Nesciunt nihil quis soluta accusantium rerum, ducimus similique reiciendis, reprehenderit provident voluptas repellendus, minima vel officiis?</h3>
       </div>
 
       <div className="mt-4 container">
@@ -102,12 +110,22 @@ function Home() {
       </div>
 
       <div className="solar-container">
-                <h2 className="solar-title">Simulate a Star System</h2>
-                <p className="solar-description">
-                    Convert your imaginations into simulations to visualise a random possible Star System
-                </p>
-                <Link to="https://threesolar.netlify.app/" target='_blank'><button className="solar-button">Simulate</button></Link>
-            </div>
+        <h2 className="solar-title">Simulate a Star System</h2>
+        <p className="solar-description">
+          Convert your imaginations into simulations to visualise a random possible Star System
+        </p>
+        <Link to="https://threesolar.netlify.app/" target='_blank'><button className="solar-button">Simulate</button></Link>
+        <h6 className='text-center text-light mt-4'>Source: https://threesolar.netlify.app/</h6>
+      </div>
+
+      <div className="solar-container">
+        <h2 className="solar-title">Create your own exoplanet</h2>
+        <p className="solar-description">
+          Using various features and parameters, create and simulate your own exoplanet...
+        </p>
+        <Link to="https://dgreenheck.github.io/threejs-procedural-planets/" target='_blank'><button className="solar-button">Simulate</button></Link>
+        <h6 className='text-center text-light mt-4'>Source: https://dgreenheck.github.io/threejs-procedural-planets/</h6>
+      </div>
 
       <div className="subscribe-container mt-4">
         <h2>Subscribe to our weekly Space Magazines</h2>
