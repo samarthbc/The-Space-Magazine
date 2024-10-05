@@ -208,7 +208,7 @@ function Home() {
   };
 
   const members = [
-    { name: 'Lakshya Sharma', description: 'Astronomy Enthusiast and Space Scientist', giturl: "", linkedurl: "https://www.linkedin.com/in/lakshya-sharma-0719992a8" },
+    { name: 'Lakshya Sharma', description: 'Astronomy Enthusiast and Space Scientist', giturl: "https://github.com/LakshyaSharma009/", linkedurl: "https://www.linkedin.com/in/lakshya-sharma-0719992a8" },
     { name: 'Likith Reddy', description: 'Astrophysicist and Researcher', giturl: "https://github.com/Likhithreddy98", linkedurl: "https://www.linkedin.com/in/likhithedu-undefined-940554330/" },
     { name: 'Samarth BC', description: 'Planetary Geologist and Explorer', giturl: "https://github.com/unknownalien1", linkedurl: "https://www.linkedin.com/in/samarth-bc-bb30b0129/" },
     { name: 'Sambhram', description: 'Cosmologist and Educator', giturl: "https://github.com/sambhramnaregal", linkedurl: "https://www.linkedin.com/in/sambhram-naregal-97477129b/?originalSubdomain=in" },
