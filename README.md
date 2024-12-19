@@ -1,6 +1,7 @@
 # The Space Magazine
 
 The Space Magazine is an interactive and educational platform focused on exoplanet exploration. This project aims to spark curiosity and provide valuable resources for space enthusiasts, educators, and learners alike.
+https://the-space-magazine.vercel.app/
 
 ## Features
 - **Weekly Magazines**: Stay updated with the latest developments in exoplanet exploration.
