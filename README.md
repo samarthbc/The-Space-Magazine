@@ -25,7 +25,7 @@ https://the-space-magazine.vercel.app/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/unknownalien1/the-space-magazine.git
+   git clone https://github.com/samarthbc/the-space-magazine.git
    ```
 2. Navigate to the project directory:
    ```bash
